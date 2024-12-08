@@ -1,0 +1,229 @@
+/* Home.css */
+.home-page {
+    min-height: 100vh;
+    background: url('https://thumbs.dreamstime.com/b/white-wall-texture-abstract-pattern-wave-wavy-modern-geometric-overlap-layer-background-99647581.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to right, #9932CC, #FF69B4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #9932CC;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f5f5f5;
+    color: #9932CC;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .mobile-nav {
+    display: none;
+    padding: 16px;
+    background: white;
+  }
+  
+  .mobile-nav-link {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .mobile-nav-link:hover {
+    background-color: #f5f5f5;
+    color: #9932CC;
+  }
+  
+  .mobile-dropdown-menu {
+    padding-left: 16px;
+  }
+  
+  .main-content {
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, #9932CC, #FF69B4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+  }
+  
+  .hero-subtitle {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .primary-button {
+    background-color: #9932CC;
+    color: white;
+  }
+  
+  .primary-button:hover {
+    background-color: #7B28A4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(153, 50, 204, 0.3);
+  }
+  
+  .secondary-button {
+    background-color: white;
+    color: #9932CC;
+    border: 2px solid #9932CC;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f8f0ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(153, 50, 204, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-nav {
+      display: none;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    .mobile-nav {
+      display: block;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .hero-title {
+      font-size: 36px;
+    }
+  
+    .hero-subtitle {
+      font-size: 20px;
+    }
+  }

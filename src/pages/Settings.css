@@ -1,0 +1,38 @@
+/* Settings.css */
+
+.settings-container {
+    padding: 20px;
+    background-color: #f4f6f9;
+}
+
+.settings-options {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-item {
+    margin-bottom: 15px;
+}
+
+.settings-item label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.save-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #875A7B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #73405f;
+}

@@ -1,0 +1,133 @@
+/* Apply Scholarship Page Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f6f9;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+  }
+  
+  .apply-scholarship-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .apply-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header-icon {
+    width: 50px;
+    height: 50px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .apply-header h1 {
+    font-size: 2em;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+  }
+  
+  .apply-header p {
+    color: var(--text-light);
+  }
+  
+  .scholarship-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    color: var(--text-dark);
+    font-weight: 600;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    color: var(--text-light);
+    width: 20px;
+  }
+  
+  .scholarship-form input, 
+  .scholarship-form select, 
+  .scholarship-form textarea {
+    width: 100%;
+    padding: 12px 12px 12px 35px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .scholarship-form input:focus, 
+  .scholarship-form select:focus, 
+  .scholarship-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .upload-icon {
+    margin-right: 10px;
+    color: var(--primary-color);
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .file-item {
+    background-color: var(--background-color);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: var(--text-dark);
+  }
+  
+  .submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 600px) {
+    .apply-scholarship-container {
+      padding: 20px 15px;
+    }
+  }

@@ -1,0 +1,91 @@
+.admin-dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.admin-sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.admin-sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.admin-sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.admin-sidebar nav ul li {
+    margin: 15px 0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.admin-sidebar nav ul li:hover {
+    background-color: #444;
+}
+
+.admin-sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.admin-sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.admin-main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #f4f6f9;
+    border-radius: 8px;
+}
+
+.admin-main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.admin-widgets {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.admin-widget {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.admin-widget h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admin-widget p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #875A7B;
+}
